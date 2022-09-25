@@ -1,0 +1,122 @@
+.main-buttons,
+.create-edit-form {
+  padding: 10px 0;
+}
+
+.edit-form__input {
+  pointer-events: none;
+}
+
+.edit-form__color {
+  pointer-events: none;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.create-form__color:hover {
+  cursor: pointer;
+}
+
+.table-winners {
+  border-spacing: 10px 3px;
+}
+
+.edit-form__button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+.sort-by-wins_asc,
+.sort-by-wins_desc,
+.sort-by-time_asc,
+.sort-by-time_desc {
+  cursor: pointer;
+  padding: 0 6px;
+}
+
+.main-button__garage,
+.main-button__winners {
+  background-color: #92d993;
+}
+
+.popup,
+.popup-broken-car {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  z-index: 10;
+  font-family: 'Rubik One', sans-serif;
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson;
+  margin: 20px auto;
+}
+
+.racetrack {
+  position: relative;
+}
+
+.garage {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+.flag {
+  position: absolute;
+  left: calc(100% - 160px);
+  top: 20px;
+  color: red;
+  font-size: 50px;
+}
+
+.car {
+  border-bottom: 2px dashed white;
+}
+
+.car-animation {
+  width: 0;
+}
+
+.car__image {
+  height: 50px;
+  width: 100px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black;
+}
+
+.footer-github {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.25s;
+
+  &:hover, &:focus {
+      color: #69db7e;
+      box-shadow: 0 0.5em 0.5em -0.4em #3fcc59;
+  }
+}
+
+.footer-rss-image {
+  height: 50px;
+  width: 100px;
+  background: url("../../assets/images/rss.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  transition: 0.25s;
+ 
+  &:hover, &:focus {
+      filter: invert(3%) sepia(33%) saturate(1353%) hue-rotate(56deg) brightness(85%) contrast(103%);
+      box-shadow: 0 0.5em 0.5em -0.4em #3fcc59;
+  }
+}
