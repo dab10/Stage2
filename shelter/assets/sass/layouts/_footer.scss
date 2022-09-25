@@ -1,0 +1,231 @@
+.footer {
+    background: url(../../assets/images/noise_transparent@2x.png),   
+    radial-gradient(110.67% 538.64% at 5.73% 0%, #513D2F 0%, #1A1A1C 69%), #211F20;
+}
+
+.footer__first-title {
+    color: $color-light;
+    max-width: 279px;
+    margin: 0;
+    padding-top: 57px;
+    @include media-tablet {
+        padding-top: 31px;
+    }
+    @include media-mobile {
+        @include font($size: 2.5rem, $height: 3.2rem);
+        letter-spacing: 0.06em;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+    }
+}
+
+.footer__second-title {
+    color: $color-light;
+    max-width: 270px;
+    margin: 0;
+    padding-top: 57px;
+    margin-right: 1px;
+    @include media-tablet {
+        padding-top: 31px;
+    }
+    @include media-mobile {
+        @include font($size: 2.5rem, $height: 3.2rem);
+        letter-spacing: 0.06em;
+        margin: auto;
+        text-align: center;
+        max-width: 270px;
+        padding-top: 40px;
+
+    }
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include media-tablet {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 60px 60px;
+        max-width: 708px;
+    }
+    @include media-mobile {
+        max-width: 320px;
+        gap: 0px 0px;
+    }
+}
+
+.footer__mail {
+    padding-top: 13px;
+    @include media-mobile {
+        padding-top: 14px;
+        text-align: center;
+    }
+}
+
+.footer__tel {
+    margin: 0;
+    padding-top: 13px;
+    @include media-mobile {
+        text-align: center;
+    }
+}
+
+.footer__map-boston {
+    margin: 0;
+    padding-top: 33px;
+    margin-right: 4px;
+    @include media-mobile {
+        padding-top: 40px;
+        margin-right: 0px;
+    }
+}
+
+.footer__map-london {
+    margin: 0;
+    padding-top: 8px;
+    @include media-mobile {
+        padding-top: 15px;
+       
+    }
+}
+
+
+
+.ico {
+    display: inline-block;
+    vertical-align: middle;
+    @extend %transition;
+    &:hover {
+        background-color: $color-light-hovered;
+    }
+}
+
+.ico_letter {
+    width: 40px;    
+    height: 26px;
+    background-color: $color-primary;
+    mask-image: url(../../assets/icons/mail.svg);
+    background-size: 40px 26px;
+    margin-bottom: 3px;
+}
+
+.ico_phone {
+    width: 40px;    
+    height: 32px;
+    background-color: $color-primary;
+    mask-image: url(../../assets/icons/phone.svg);
+    background-size: 40px 32px;
+    vertical-align: top;
+}
+
+.ico_map-boston {
+    width: 22px;    
+    height: 32px;
+    background-color: $color-primary;
+    mask-image: url(../../assets/icons/pin.svg);
+    background-size: 22px 32px;
+    vertical-align: middle;
+    margin-bottom: 28px;
+    @include media-mobile {
+        margin-bottom: 26px;
+       margin-right: 1px;
+    }
+    
+    
+}
+
+.ico_map-london {
+    width: 22px;    
+    height: 32px;
+    background-color: $color-primary;
+    mask-image: url(../../assets/icons/pin.svg);
+    background-size: 22px 32px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    @include media-mobile {
+        margin-bottom: 2px;
+       
+    }
+    
+}
+
+.footer__link-mail {
+    display: inline-block;
+    color: $color-primary;
+    max-width: 263px;
+    padding-left: 14px;
+    margin-top: 4px;
+    text-decoration: none;
+    @extend %transition;
+    &:hover{
+        color: $color-light-hovered;
+    }
+    
+}
+
+.footer__link-tel {
+    display: inline-block;
+    color: $color-primary;
+    max-width: 263px;
+    padding-left: 14px;
+    margin-top: 5px;
+    text-decoration: none;
+    @extend %transition;
+    &:hover{
+        color: $color-light-hovered;
+    }
+    
+}
+
+.footer__link-map-boston {
+    display: inline-block;
+    color: $color-primary;
+    max-width: 270px;
+    padding-left: 13px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    @extend %transition;
+    &:hover{
+        color: $color-light-hovered;
+    }
+    @include media-mobile {
+        padding-left: 12px;
+    }
+}
+
+.footer__link-map-london {
+    display: inline-block;
+    color: $color-primary;
+    max-width: 270px;
+    padding-left: 13px;
+    padding-top: 9px;
+    text-decoration: none;
+    @extend %transition;
+    &:hover{
+        color: $color-light-hovered;
+    }
+
+}
+
+.footer__image {
+    background-image: url(../../assets/images/footer-puppy.png);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 310px;
+    
+    margin-top: 40px;
+    
+    @include media-tablet {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    @include media-mobile {
+        background-image: url(../../assets/images/footer-puppy-mobile.png);
+        background-repeat: no-repeat;
+        width: 260px;
+        height: 269px;
+        margin: auto;
+        margin-top: 38px;
+    }
+}
