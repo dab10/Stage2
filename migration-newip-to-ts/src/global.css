@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    background: #17181c;
+    font-family: sans-serif;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+@media (max-width: 1279px) {
+    .wrapper {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        padding: 0 0px;
+    }
+}
+
+header {
+    padding: 10px 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 33% 66%;
+    grid-template-rows: 70vh;
+}
+
+@media (max-width: 767px) {
+    main {
+        grid-template-columns: 100%;
+        grid-template-rows: 33vh 35vh;
+        gap: 20px;
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    footer {
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 10px;
+    }
+}
+
+footer .copyright {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+footer .copyright a {
+    color: #444;
+}
+footer .copyright a:hover {
+    color: #555;
+}
+footer .copyright:before {
+    content: '©';
+}
+
+.footer-year {
+    color: #70d6ff;
+}
+
+.footer-github {
+    text-decoration: none;
+    color: #70d6ff;
+    transition: 0.25s;
+}
+
+.footer-github:hover,
+.footer-github:focus {
+    color: #69db7e;
+    box-shadow: 0 0.5em 0.5em -0.4em #3fcc59;
+}
+
+.footer-rss-image {
+    height: 50px;
+    width: 100px;
+    background: url("./assets/images/rss.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: 0.25s;
+    filter: invert(21%) sepia(56%) saturate(1534%) hue-rotate(170deg) brightness(102%) contrast(102%);
+}
+
+.footer-rss-image:hover,
+.footer-rss-image:focus {
+    filter: invert(3%) sepia(33%) saturate(1353%) hue-rotate(56deg) brightness(85%) contrast(103%);
+    box-shadow: 0 0.5em 0.5em -0.4em #3fcc59;
+}
+
+/*scrollbar*/
+
+*,
+html * {
+  scrollbar-width: thin;
+  scrollbar-color: #30c5ff #555;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+  background: #555;
+}
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+  background-color: #30c5ff;
+  border-radius: 5px;
+  border: 3px solid #555;
+}
